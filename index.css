@@ -22,7 +22,9 @@
   background-color: #ddeedd;
   color: white;
 }
-
+head{
+	color: white;
+}
 html {
 	background-image: url("pics/sheesh.jpg");
 	
