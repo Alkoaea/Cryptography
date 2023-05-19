@@ -1,3 +1,90 @@
 <!DOCTYPE html>
 <html>
+  <head>
+	</head>
+	<body>
+		
+		<form id = "admission" onsubmit="return print();">
+		<label for="name">Name</label>
+		<input type ="text" name="name" id="name"><br><br>
+		
+		<label for="day">Number of visits</label>
+		<input type="number" name="day" id="day"><br><br>
+		
+		<label for="re">Reason</label><br>
+		<textarea type="text" id="reason" name= "reason"></textarea><br><br>
+		<P> Did you enjoy your experience? </p>
+		<label for="e">Yes</label>
+		<input type="checkbox" id="e" name="used" value="Yes"><br><br>
+		
+		<label for="un">No</label>
+		<input type="checkbox" id="un" name="used" value="No"><br><br>
+		
+		<fieldset form>
+		<legend>PAGES</legend>
+		
+		<label for="cs">Introduction</label>
+		<input type="checkbox" value="Introduction" name="sub"><br><br>
+		
+		<label for="P6">History 101</label>
+		<input type="checkbox" value="History 101" name="sub"><br><br>
+		
+		<label for="chem">Cryptography Now</label>
+		<input type="checkbox" value="Cryptography Now" name="sub"><br><br>
+		
+		<label for="st">Methods</label>
+		<input type="checkbox" value="Methods" name="sub"><br><br>
+		
+		<input type="submit"> </input><br>
+		</fieldset>
+		</form>
+		<p id = "chuya">Name: </p>
+        <p id = "maiyo">Number of Visits:</p>
+        <p id = "maimee">Reason:</p>
+        <p id = "panha">Enjoyed:</p>
+        <p id = "sing">Missed subs:</p>
+        <script>
+           function print(){
+                var name = document.getElementById("name").value;
+                var days = document.getElementById("day").value;
+                var reason = document.getElementById("reason").value;
+                var cry = document.getElementsByName("used");
+                var sleep = document.getElementsByName("sub");
 
+                var done = "";
+                for (var x = 0; x < cry.length; x++)  {
+                    if (cry[x].checked)  {
+                        done = cry[x].value;
+                    }
+                }
+
+                var naur = [];
+                for (var y = 0; y < sleep.length; y++)  {
+                    if (sleep[y].checked)  {
+                        naur.push(sleep[y].value);
+                    }
+                }
+
+                document.getElementById("chuya").innerHTML = "Name: " + name;
+                document.getElementById("maiyo").innerHTML = "Number of visits: " + days;
+                document.getElementById("panha").innerHTML = "Reason for Absence: " + reason;
+                
+                if (done !== "Yes")  {
+                    document.getElementById("maimee").innerHTML = "Enjoyed: False";
+                }
+                else  {
+                    document.getElementById("maimee").innerHTML = "Enjoyed: True";
+                }
+
+                if (naur.length != 0)  {
+                    document.getElementById("sing").innerHTML = "Missed Periods: " + naur.join(", ");
+                }
+                else  {
+                    document.getElementById("sing").innerHTML = "Missed Periods: None";
+                }
+
+                return false;
+            }
+		</script>
+	</body>
+</html>
