@@ -25,14 +25,11 @@
 		<br>
 		<br>
 	<button onclick = "ChangeImage()">Click me</button>
-	<img id = "hey" src = "pics/hey.jpg">
-	<button onclick = "ChangeBack()">Click me too</button>
-	<script>
-		function ChangeImage() {
-			document.getElementById('wow').src="pics/yep.jpg";
-		}
-		function ChangeBack() {
-			document.getElementbyId('wow).src="pics/wow.jpg";
-		{
+	<img id="image" onclick="changeImage()" src="wow.jpg">
+<script>
+function changeImage()
+{
+image.src='yep.jpg';
+}
 	</script>
 </html>
