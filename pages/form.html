@@ -42,7 +42,7 @@
         <p id = "maiyo">Number of Visits:</p>
         <p id = "maimee">Advice:</p>
         <p id = "panha">Enjoyed:</p>
-        <p id = "sing">Missed subs:</p>
+        <p id = "sing">Pages visited:</p>
         <script>
            function print(){
                 var name = document.getElementById("name").value;
@@ -77,10 +77,10 @@
                 }
 
                 if (naur.length != 0)  {
-                    document.getElementById("sing").innerHTML = "Pages enjoyed: " + naur.join(", ");
+                    document.getElementById("sing").innerHTML = "Pages visited: " + naur.join(", ");
                 }
                 else  {
-                    document.getElementById("sing").innerHTML = "Pages enjoyed: None";
+                    document.getElementById("sing").innerHTML = "Pages visited: None";
                 }
 
                 return false;
