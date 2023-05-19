@@ -22,7 +22,10 @@
   background-color: #ddeedd;
   color: white;
 }
-head{
+header{
+	color: white;
+}
+body{
 	color: white;
 }
 html {
