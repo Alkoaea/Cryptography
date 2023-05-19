@@ -24,7 +24,9 @@
 		</nav>
 		<br>
 		<br>
-	<img id="image" onclick="changeImage()" src="wow.jpg">
+	<button onclick = "ChangeImage()"> Click me </button>
+	<img id="image" src="wow.jpg">
+	<button onclick = "ChangeBack()"> Click me too </button>
 	
 <body>
 	<p> click on the image for a surprise! </p>
@@ -37,16 +39,20 @@
 	<br>
 	<p> From the little activity you did by changing the image, you have seen a glimpse of what cryptography was like before and now. </p>
 
-</body>
+
 <script>
-function changeImage()
+function ChangeImage()
 {
-image.src='yep.jpg';
+document.getElementById('image').src="yep.jpg";
 }
-	{
+function ChangeBack() {
+	document.getElementById('image').src="wow.jpg";
+}
+function yaur{
 const Greet = "Hello! Welcome to my website about cryptography :D";
 alert(Greet);
 
 }
 	</script>
+	</body>
 </html>
