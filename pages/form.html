@@ -11,7 +11,7 @@
 		<label for="day">Number of visits</label>
 		<input type="number" name="day" id="day"><br><br>
 		
-		<label for="re">Reason</label><br>
+		<label for="re">Advice to make this page better: </label><br>
 		<textarea type="text" id="reason" name= "reason"></textarea><br><br>
 		<P> Did you enjoy your experience? </p>
 		<label for="e">Yes</label>
@@ -40,7 +40,7 @@
 		</form>
 		<p id = "chuya">Name: </p>
         <p id = "maiyo">Number of Visits:</p>
-        <p id = "maimee">Reason:</p>
+        <p id = "maimee">Advice:</p>
         <p id = "panha">Enjoyed:</p>
         <p id = "sing">Missed subs:</p>
         <script>
@@ -67,7 +67,7 @@
 
                 document.getElementById("chuya").innerHTML = "Name: " + name;
                 document.getElementById("maiyo").innerHTML = "Number of visits: " + days;
-                document.getElementById("panha").innerHTML = "Reason for Absence: " + reason;
+                document.getElementById("panha").innerHTML = "Advice: " + reason;
                 
                 if (done !== "Yes")  {
                     document.getElementById("maimee").innerHTML = "Enjoyed: False";
