@@ -23,16 +23,16 @@
   color: white;
 }
 .sprite {
-	background: url('dore.jpg') -9px -10px;
-	width: 3050px;
-	height: 80px;
-	animation: varName 5s steps(36) infinite;
-	zoom: .4;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	background: transparent url('bug.png') 0 0 no-repeat;
+	width: 268px;
+	height: 209px;
+	transform: translate (-50%, -50%);
+	animation: run is infinite;
 }
-@keyframes varName{
- from{background-position-x:-8px;}
- to{background-position-x:-3509px;}
- }
+	
 header{
 	color: white;
 }
