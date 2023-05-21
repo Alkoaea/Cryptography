@@ -29,7 +29,7 @@
 	background: url("pics/bug.png") 0px 0px ;
 	width: 4020px;
 	height: 209px;
-	animation: varName 4s steps(15) infinite;
+	animation: varName 1s steps(15) infinite;
 	zoom: .4;
 }
 @keyframes varName{
